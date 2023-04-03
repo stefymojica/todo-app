@@ -1,9 +1,12 @@
-<script>
-    import {items} from './stores.ts'
+<script lang="ts">
+    import {items} from './stores'
 
     let inputValue = "";
     const addToItem = () => {
-        $items.push(inputValue);
+        $items.push({
+            status:"Pending",
+            text:inputValue
+        });
         $items = $items
         inputValue = "";
     }
@@ -16,13 +19,8 @@ Add New Note
 </button>
 
 
-<ul style="list-style:none">
-    {#each $items as item}
-    <li>{item} 
-    <button>Done</button>    
-    <button>Remove</button>
-    </li>
-    {/each}
-</ul>
+
+
+
 
 

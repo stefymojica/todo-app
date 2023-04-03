@@ -1,2 +1,8 @@
 import { writable } from 'svelte/store';
-export const items = writable([]);
+export interface NoteItem {
+    text:string;
+    status:"Pending" | "Done"
+}
+
+export const items = writable<NoteItem[]>([]);
+
