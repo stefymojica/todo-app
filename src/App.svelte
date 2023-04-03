@@ -6,6 +6,9 @@
 <main>
   <h1>TO-DO APP</h1>
   <Form/>
-  <List/>
+  <List status="Backlog"/>
+  <List status="Pending"/>
+  <List status="InProgress"/>
+  <List status="Done"/>
 </main>
 
