@@ -1,12 +1,15 @@
 <script lang="ts">
-    import {items} from './stores'
+    import {items, lastIndex} from './stores'
 
     let inputValue = "";
     const addToItem = () => {
         $items.push({
+            id: $lastIndex,
             status:"Pending",
-            text:inputValue
+            text:inputValue,
+            updated_at: new Date().toString()
         });
+        $lastIndex++;
         $items = $items
         inputValue = "";
     }
