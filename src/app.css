@@ -1,11 +1,5 @@
-body {
-  text-align: center;
-}
-h1 {
-  color:#89375F
-}
-li {
-  padding-bottom: 10px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
