@@ -5,6 +5,7 @@ export interface NoteItem {
     id: number;
     text:string;
     status: NoteStatus;
+    description:string;
 }
 
 export const items = writable<NoteItem[]>([]);

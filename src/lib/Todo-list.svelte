@@ -18,7 +18,7 @@
 <h2>{status}</h2>
 <ul style="list-style:none">
   {#each $items.filter((item) => item.status === status) as item}
-  <li>{item.text} - {item.status}
+  <li>{item.text} : {item.description}
 
   {#if item.status === "Backlog"}
   <button on:click={() => handleStatusChange(item, "Pending")}>Pending</button>   
