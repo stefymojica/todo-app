@@ -4,7 +4,10 @@
 </script>
 
 <main>
-  <h1>TO-DO APP</h1>
+  
+  <h1 class="text-center p-4 text-6xl font-bold " >
+    <span class="bg-gradient-to-r from-pink-400 to-rose-300 text-transparent bg-clip-text">TO-DO APP</span>
+  </h1>
   <Form/>
   <List status="Backlog"/>
   <List status="Pending"/>

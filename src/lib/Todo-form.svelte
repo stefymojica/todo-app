@@ -17,12 +17,13 @@
     }
 </script>
 
-<input placeholder="write your note" bind:value={inputValue}>
-<input placeholder="write description" bind:value={inputDescription}>
+<div class="text-center p-4">
+    <input class="box-border h-8 p-2 border-2 rounded" placeholder="write your note" bind:value={inputValue}>
+    <input class="box-border h-8 p-2 border-2 rounded" placeholder="write description" bind:value={inputDescription}>   
+    <button class="box-border h-8 w-40 border-2 rounded" on:click={addToItem}>Add New Note</button>
+</div>
 
-<button on:click={addToItem}>
-Add New Note
-</button>
+
 
 
 
